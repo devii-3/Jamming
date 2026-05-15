@@ -2,8 +2,48 @@
   --white: #fff0e5;
   --blue: #10162f;
   --yellow: #ffd300;
+  --footer: #030303;
 }
-* {
+
+.darkmode{
+  --white:#10162f;
+  --blue:#fff0e5;
+  --yellow:#10162f;
+  --footer: #fff
+}
+
+#theme-switch{
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  
+  border-radius: 50%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  
+}
+
+#theme-switch svg{
+  fill:var(--blue)
+}
+
+#theme-switch svg:last-child{
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+  display: block;
+}
+
+body {
   margin: 0;
   padding: 0;
   background-color: var(--white);
@@ -11,7 +51,7 @@
 
 nav {
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   color: var(--blue);
 }
 
@@ -19,26 +59,28 @@ nav {
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  font-size: 25px;
-  margin-bottom: 60px;
-  font-family: "Causeway", cursive;
+  align-items: center;
 }
 
 .navbar svg {
   width: 60px;
   height: 40px;
-  border-radius: 50%;
-  margin-left: 15px;
   display: flex;
+  top: 10px;
+  align-items: center;
+  padding: 2px;
 }
 
-span {
-  height: 10px;
+.jamming{
+  font-size: 20px;
+  font-family: "Causeway", cursive;
+  
+}
+
+.top{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
 }
 
 .notification svg {
@@ -46,15 +88,15 @@ span {
 }
 
 .logo {
+  height: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   background-color: var(--blue);
   color: var(--yellow);
   border-radius: 40px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 6px;
+  padding: 3px;
 }
 
 .logo h4 {
@@ -141,6 +183,7 @@ nav-2 {
   height: 300px;
   width: 500px;
   font-family: "roboto", sans-serif;
+  color: var(--blue);
 }
 
 .box-2 {
@@ -156,6 +199,7 @@ nav-2 {
 }
 
 footer {
+  color: var(--footer);
   margin: 60px;
   display: flex;
   flex-direction: column;
@@ -167,7 +211,6 @@ footer {
   font-size: 12px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
 }
 
 .copyright {
@@ -177,6 +220,8 @@ footer {
   font-size: 10px;
   color: var(--blue);
 }
+
+
 
 @media (max-width: 900px) and (min-width: 500px) {
   nav-2 {
