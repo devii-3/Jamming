@@ -1,0 +1,224 @@
+:root {
+  --white: #fff0e5;
+  --blue: #10162f;
+  --yellow: #ffd300;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+}
+
+nav {
+  margin: 10px;
+  padding: 20px;
+  color: var(--blue);
+}
+
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  margin-bottom: 60px;
+  font-family: "Causeway", cursive;
+}
+
+.navbar svg {
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+  display: flex;
+}
+
+span {
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.notification svg {
+  height: 30px;
+}
+
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: var(--blue);
+  color: var(--yellow);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px;
+}
+
+.logo h4 {
+  background-color: var(--blue);
+}
+
+.navbar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  gap: 30px;
+}
+
+nav-1 {
+  border: 2px solid var(--blue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 20px;
+  margin-bottom: 100px;
+  padding: 10px;
+}
+
+nav-2 svg {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  flex-direction: column;
+}
+
+.my-rooms {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800px;
+}
+
+.my-rooms h3 {
+  display: flex;
+  gap: 10px;
+  color: var(--blue);
+  height: 20px;
+}
+
+.my-rooms svg {
+  height: 30px;
+}
+
+.menu h4,
+.user h4,
+.go h4 {
+  height: 30px;
+  width: 30px;
+  color: var(--blue);
+}
+
+.user {
+  display: flex;
+}
+
+nav-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.box-1 {
+  border: solid 4px var(--blue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  font-family: "roboto", sans-serif;
+}
+
+.box-2 {
+  border: solid 4px var(--blue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 500px;
+  font-family: "roboto", sans-serif;
+}
+
+footer {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.About {
+  font-family: "roboto";
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  color: var(--blue);
+}
+
+@media (max-width: 900px) and (min-width: 500px) {
+  nav-2 {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 300px) {
+  .navbar svg {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo h4 {
+    display: none;
+  }
+
+  nav-1 {
+    width: 300px;
+    height: 30px;
+  }
+
+  .go {
+    display: none;
+  }
+
+  nav-2 {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-1 {
+    width: 300px;
+  }
+
+  .box-2 {
+    width: 300px;
+  }
+}
